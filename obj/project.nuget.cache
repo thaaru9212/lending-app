@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dOFUuritDt0=",
+  "success": true,
+  "projectFilePath": "/Users/thaaru/lending-app/lending_app.csproj",
+  "expectedPackageFiles": [
+    "/Users/thaaru/.nuget/packages/microsoft.netcore.app.ref/6.0.33/microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "/Users/thaaru/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "/Users/thaaru/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.33/microsoft.netcore.app.host.osx-arm64.6.0.33.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+/Users/thaaru/lending-app/bin/Debug/net6.0/lending_app
+/Users/thaaru/lending-app/bin/Debug/net6.0/lending_app.deps.json
+/Users/thaaru/lending-app/bin/Debug/net6.0/lending_app.runtimeconfig.json
+/Users/thaaru/lending-app/bin/Debug/net6.0/lending_app.dll
+/Users/thaaru/lending-app/bin/Debug/net6.0/lending_app.pdb
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.AssemblyInfoInputs.cache
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.AssemblyInfo.cs
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.csproj.CoreCompileInputs.cache
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.sourcelink.json
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.dll
+/Users/thaaru/lending-app/obj/Debug/net6.0/refint/lending_app.dll
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.pdb
+/Users/thaaru/lending-app/obj/Debug/net6.0/lending_app.genruntimeconfig.cache
+/Users/thaaru/lending-app/obj/Debug/net6.0/ref/lending_app.dll

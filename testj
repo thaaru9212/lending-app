@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the Node.js project'
+                sh 'npm install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests with Mocha'
+                sh 'npm test'
+            }
+        }
+
+        stage('Code Quality Analysis') {
+            steps {
+                echo 'Analyzing code with SonarQube'
+                sh 'sonar-scanner'
+            }
+        }
+
+        stage('Security Scan') {
+            steps {
+                echo 'Performing security scan with OWASP ZAP'
+                sh 'zap-cli quick-scan http://localhost:3000'
+            }
+        }
+
+        stage('Deploy to Staging') {
+            steps {
+                echo 'Deploying the app to staging'
+                sh 'docker-compose up -d'
+            }
+        }
+
+        stage('Integration Tests on Staging') {
+            steps {
+                echo 'Running integration tests on staging'
+                sh 'newman run postman_collection.json'
+            }
+        }
+
+        stage('Deploy to Production') {
+            steps {
+                echo 'Deploying to Production'
+                sh 'ansible-playbook -i inventory/production deploy.yml'
+            }
+        }
+
+        stage('Monitoring and Alerting') {
+            steps {
+                echo 'Monitoring production environment'
+                sh 'datadog-agent check app_monitoring'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline execution completed'
+        }
+    }
+}
